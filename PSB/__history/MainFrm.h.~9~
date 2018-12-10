@@ -1,0 +1,62 @@
+//---------------------------------------------------------------------------
+
+#ifndef MainFrmH
+#define MainFrmH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Vcl.ExtCtrls.hpp>
+//---------------------------------------------------------------------------
+class TfrmMain : public TForm
+{
+__published:	// IDE-managed Components
+	TPanel *pnl1;
+	TPanel *pnl2;
+	TButton *btn1;
+	TGroupBox *grpbx1;
+	TLabel *lbl8;
+	TLabel *lbl1;
+	TLabel *lbl2;
+	TLabel *lbl3;
+	TLabel *lbl4;
+	TLabel *lbl5;
+	TLabel *lbl6;
+	TEdit *edt1;
+	TEdit *edt2;
+	TEdit *edt3;
+	TEdit *edt4;
+	TEdit *edt5;
+	TEdit *edt6;
+	TEdit *edt7;
+	TGroupBox *grpbx2;
+	TLabel *lbl7;
+	TEdit *edt8;
+	TEdit *edt9;
+	TEdit *edt10;
+	TEdit *edt11;
+	TEdit *edt12;
+	TEdit *edt13;
+	TEdit *edt14;
+	TLabel *lbl9;
+	TLabel *lbl10;
+	TLabel *lbl11;
+	TLabel *lbl12;
+	TLabel *lbl13;
+	TLabel *lbl14;
+	TLabel *lbl15;
+	TEdit *edt15;
+	TLabel *lbl16;
+	TLabel *lbl17;
+	TEdit *edt16;
+	TEdit *edt17;
+	void __fastcall btn1Click(TObject *Sender);
+private:	// User declarations
+public:		// User declarations
+	__fastcall TfrmMain(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TfrmMain *frmMain;
+//---------------------------------------------------------------------------
+#endif

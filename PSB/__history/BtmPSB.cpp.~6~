@@ -1,0 +1,33 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "BtmPSB.h"
+#include "visa.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm1 *Form1;
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+	: TForm(Owner)
+{
+
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::btn1Click(TObject *Sender)
+{
+	ViChar buffer[VI_FIND_BUFLEN];
+	memset(buffer , 0 ,VI_FIND_BUFLEN);
+	ViRsrc matches = buffer;
+	ViUInt32 nmatches;
+
+	ViFindList list;
+	ViSession vi , defaultRM;
+	viOpenDefaultRM(&defaultRM);
+	viFindRsrc(defaultRM , "USB?*" , &list , &nmatches , matches);
+	viOpen(defaultRM , matches , VI_NULL , VI_NULL , &vi);
+}
+//---------------------------------------------------------------------------
+

@@ -1,0 +1,35 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "RedblackTree.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+
+/*
+ * 对红黑树的节点(x)进行左旋转
+ *
+ * 左旋示意图(对节点x进行左旋)：
+ *      px                              px
+ *     /                               /
+ *    x                               y
+ *   /  \      --(左旋)-->           / \                #
+ *  lx   y                          x  ry
+ *     /   \                       /  \
+ *    ly   ry                     lx  ly
+ *
+ *
+ */
+ template<class T>
+ void RBTree<T>::leftRotate(RBTNode<T>* &root,RBTNode<T>* x)
+ {
+	RBTNode<T>* y = x->right;
+	y->left = x;
+
+
+
+
+
+
+ }

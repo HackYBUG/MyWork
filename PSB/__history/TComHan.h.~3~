@@ -1,0 +1,30 @@
+//---------------------------------------------------------------------------
+
+#ifndef TComHanH
+#define TComHanH
+//---------------------------------------------------------------------------
+#include "TSerialPort.h"
+//---------------------------------------------------------------------------
+
+struct PsbType
+{
+	double ele_1;
+
+
+};
+
+class TComIT8500
+{
+public:
+	TComIT8500(char* port);
+	~TComIT8500();
+
+
+	 void __fastcall SendEleDate(int eleValue);
+private:
+	TSerialPort *c_SerialPort;
+
+};
+
+
+#endif

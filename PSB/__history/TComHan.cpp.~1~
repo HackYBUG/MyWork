@@ -1,0 +1,28 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "TComIT8500.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+TComIT8500::TComIT8500(char* port)
+{
+	c_SerialPort = new  TSerialPort();
+	c_SerialPort->OpenEx(port,9600,8,1);
+}
+
+TComIT8500::~TComIT8500()
+{
+	if(c_SerialPort->m_bOpened)
+		c_SerialPort->PortClose();
+	delete c_SerialPort;
+}
+
+
+void __fastcall TComIT8500::SendEleDate(int eleValue)
+{
+	 char pSend[250] = {"VOLTage 43.00\n"}; //设定通道电压
+
+	 c_SerialPort->SendData(pSend,MAX_DATA_LENGTH);
+}

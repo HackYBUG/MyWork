@@ -1,0 +1,42 @@
+object Form1: TForm1
+  Left = 549
+  Top = 154
+  Caption = 'Form1'
+  ClientHeight = 443
+  ClientWidth = 875
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesigned
+  PixelsPerInch = 96
+  TextHeight = 13
+  object pnl1: TPanel
+    Left = 0
+    Top = 0
+    Width = 875
+    Height = 129
+    Align = alTop
+    TabOrder = 0
+  end
+  object pnl2: TPanel
+    Left = 0
+    Top = 129
+    Width = 875
+    Height = 314
+    Align = alClient
+    TabOrder = 1
+    ExplicitTop = 135
+    object GroupBox1: TGroupBox
+      Left = 16
+      Top = 24
+      Width = 633
+      Height = 129
+      Caption = 'GroupBox1'
+      TabOrder = 0
+    end
+  end
+end
