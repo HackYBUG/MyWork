@@ -8,13 +8,18 @@
 #include <Vcl.StdCtrls.hpp>
 #include <Vcl.Forms.hpp>
 #include <Vcl.ExtCtrls.hpp>
+#include <Vcl.ComCtrls.hpp>
+
+#include "funs_Public.h"
 //---------------------------------------------------------------------------
 class TfrmMain : public TForm
 {
 __published:	// IDE-managed Components
 	TPanel *pnl1;
 	TPanel *pnl2;
-	TLabel *Label1;
+	TButton *btn1;
+	TGroupBox *grpbx1;
+	TLabel *lbl8;
 	TLabel *lbl1;
 	TLabel *lbl2;
 	TLabel *lbl3;
@@ -28,6 +33,7 @@ __published:	// IDE-managed Components
 	TEdit *edt5;
 	TEdit *edt6;
 	TEdit *edt7;
+	TGroupBox *grpbx2;
 	TLabel *lbl7;
 	TEdit *edt8;
 	TEdit *edt9;
@@ -36,9 +42,32 @@ __published:	// IDE-managed Components
 	TEdit *edt12;
 	TEdit *edt13;
 	TEdit *edt14;
-	TButton *btn1;
+	TLabel *lbl9;
+	TLabel *lbl10;
+	TLabel *lbl11;
+	TLabel *lbl12;
+	TLabel *lbl13;
+	TLabel *lbl14;
+	TLabel *lbl15;
+	TEdit *edt15;
+	TLabel *lbl16;
+	TLabel *lbl17;
+	TEdit *edt16;
+	TEdit *edt17;
+	TEdit *edt18;
+	TEdit *edt19;
+	TStatusBar *StatusBar1;
+	TLabel *lbl18;
+	TEdit *edt20;
+	TEdit *edt21;
+	TEdit *edt22;
+	TEdit *edt23;
+	TLabel *lbl19;
+	TButton *btn2;
 	void __fastcall btn1Click(TObject *Sender);
+	void __fastcall btn2Click(TObject *Sender);
 private:	// User declarations
+	IniType p_IniData;
 public:		// User declarations
 	__fastcall TfrmMain(TComponent* Owner);
 };

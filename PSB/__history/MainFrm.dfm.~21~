@@ -169,16 +169,9 @@ object frmMain: TfrmMain
       object lbl25: TLabel
         Left = 235
         Top = 252
-        Width = 119
-        Height = 14
-        Caption = '(3.135V ~ 3.465V)'
-      end
-      object lbl26: TLabel
-        Left = 235
-        Top = 295
         Width = 105
         Height = 14
-        Caption = '(1.14V ~ 1.26V)'
+        Caption = '(4.75V ~ 5.25V)'
       end
       object edt1: TEdit
         Left = 102

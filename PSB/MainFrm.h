@@ -64,6 +64,13 @@ __published:	// IDE-managed Components
 	TEdit *edt23;
 	TLabel *lbl19;
 	TButton *btn2;
+	TLabel *lbl20;
+	TLabel *lbl21;
+	TLabel *lbl22;
+	TLabel *lbl23;
+	TLabel *lbl24;
+	TLabel *lbl25;
+	TLabel *lbl26;
 	void __fastcall btn1Click(TObject *Sender);
 	void __fastcall btn2Click(TObject *Sender);
 private:	// User declarations
